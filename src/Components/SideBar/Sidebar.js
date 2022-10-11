@@ -1,15 +1,17 @@
-
+import {Link} from 'react-router-dom'
 import React from "react";
 import './SideBar.css'
+import "@fontsource/overpass";
 
-class SideBar extends React.Component {
-    render() {
+function SideBar() {
+        const path = window.location.pathname
         return(
-            <nav className="sidebar">
-                <ul className='sidebar-nav'>
-                    <li className='nav-item'>
-                        <a href='#' className='nav-link'>
-                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+            <nav className="sidebar" >
+                <div className='top-nav'>
+                    <ul className='sidebar-nav'>
+                        {/*<li className='nav-item'>
+                            <Link to='/' className='nav-link'>
+                                <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                             width="64.000000pt" height="64.000000pt" viewBox="0 0 64.000000 64.000000"
                             preserveAspectRatio="xMidYMid meet">
                             <g transform="translate(0.000000,64.000000) scale(0.100000,-0.100000)"
@@ -23,13 +25,33 @@ l-50 0 0 77 c0 101 -18 123 -97 123 -44 0 -58 -5 -78 -25 -22 -21 -25 -33 -25
 -100 l0 -76 -52 3 -53 3 -5 125 -5 125 -28 3 c-57 7 -44 29 94 168 74 74 140
 134 149 134 8 0 74 -60 147 -132z"/>
                             </g>
-                            </svg>
+                                </svg>
                                 <span className='link-text'>Home</span>
-                        </a>
-                    </li>
-                    <li className='nav-item'>
-                        <a href='#' className='nav-link'>
-                            <  svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                            </Link>
+                        </li>*/}
+                        <li className='nav-item'>
+                            <Link to='/players' className='nav-link'>
+                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="64.000000pt" height="64.000000pt" viewBox="0 0 64.000000 64.000000"
+ preserveAspectRatio="xMidYMid meet">
+
+<g transform="translate(0.000000,64.000000) scale(0.100000,-0.100000)"
+fill="currentColor" stroke="none">
+<path d="M261 572 c-38 -20 -71 -73 -71 -112 0 -60 67 -125 130 -125 63 0 130
+65 130 125 0 62 -68 130 -130 130 -14 0 -41 -8 -59 -18z m130 -41 c64 -65 20
+-171 -71 -171 -33 0 -48 6 -71 29 -64 65 -20 171 71 171 33 0 48 -6 71 -29z"/>
+<path d="M217 294 c-67 -21 -130 -85 -153 -157 -29 -92 -42 -87 256 -87 298 0
+285 -5 256 87 -44 138 -199 206 -359 157z m211 -30 c49 -20 90 -60 113 -109
+37 -79 49 -75 -221 -75 -267 0 -254 -4 -224 68 20 49 60 90 109 113 51 24 170
+25 223 3z"/>
+</g>
+                            </svg>
+                                <span className='link-text'>Players</span>
+                            </Link>
+                        </li>
+                        <li className='nav-item'>
+                            <Link to='/scores' className='nav-link'>
+                                < svg version="1.0" xmlns="http://www.w3.org/2000/svg"
  width="64.000000pt" height="64.000000pt" viewBox="0 0 64.000000 64.000000"
  preserveAspectRatio="xMidYMid meet">
 
@@ -59,13 +81,13 @@ fill="currentColor" stroke="none">
 -23 -23 0 -18 7 -20 70 -20 63 0 70 2 70 20 0 13 -8 21 -22 23 -18 3 -22 11
 -25 45 -3 40 -22 59 -41 41z"/>
 </g>
-                            </svg>
-                            <span className='link-text'>Scores</span>
-                        </a>
-                    </li>
-                    <li className='nav-item'>
-                        <a href='#' className='nav-link'>
-                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                                </svg>
+                                <span className='link-text'>Scores</span>
+                            </Link>
+                        </li>
+                        <li className='nav-item'>
+                            <Link to='/standings' className='nav-link'>
+                                <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
  width="64.000000pt" height="64.000000pt" viewBox="0 0 64.000000 64.000000"
  preserveAspectRatio="xMidYMid meet">
 
@@ -83,13 +105,13 @@ fill="currentColor" stroke="none">
 <path d="M154 135 c-4 -8 -4 -22 0 -30 5 -13 38 -15 243 -13 l238 3 0 25 0 25
 -238 3 c-205 2 -238 0 -243 -13z"/>
 </g>
-                            </svg>
-                            <span className='link-text1'>Standings</span>
-                        </a>
-                    </li>
-                    <li className='nav-item'>
-                        <a href='#' className='nav-link'>
-                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                                </svg>
+                                <span className='link-text1'>Standings</span>
+                            </Link>
+                        </li>            
+                        <li className='nav-item'>
+                            <Link to='/about' className='nav-link'>
+                                <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
  width="64.000000pt" height="64.000000pt" viewBox="0 0 64.000000 64.000000"
  preserveAspectRatio="xMidYMid meet">
 
@@ -104,15 +126,21 @@ fill="currentColor" stroke="none">
 <path d="M302 358 c-13 -13 -17 -173 -6 -202 8 -21 40 -21 48 0 3 9 6 55 6
 103 0 79 -9 111 -30 111 -3 0 -11 -5 -18 -12z"/>
 </g>
-                            </svg>
-                            <span className='link-text'>About</span>
-                        </a>
-                    </li>
+                                </svg>
+                                <span className='link-text'>About</span>
+                            </Link>
+                        </li>        
+                    </ul>
 
-                </ul>
-            </nav>
+                    </div>
+                
+                    <div className='bottom-nav'>
+                        <p className='name' style={{color:"white" ,marginLeft: "50px"}}> Built by Talal Elagha</p>
+                    </div>
+                </nav>
         )
     }
-}
+
 
 export default SideBar
+

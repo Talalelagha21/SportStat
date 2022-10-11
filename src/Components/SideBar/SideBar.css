@@ -1,14 +1,11 @@
 
 .sidebar {
     position: fixed;
-    margin-top: 60px;
-    width: 6rem;
-    height: 95vh;
-    background-color: rgba(47,50,67,1);
-    -moz-box-shadow: 5px 7px 5px #282831;
-    -webkit-box-shadow: 5px 7px 5px #282831;
-    box-shadow: 5px 7px 5px #282831;
-    transition: 200ms ease;
+    margin-top: 80px;
+    width: 15rem;
+    height: 93vh;
+    border-right: solid 2px#323232;
+    transition: 300ms ease;
   }
 
   .sidebar-nav {
@@ -35,49 +32,53 @@
 }
 
 .link-text1 {
-
-    font-family:monospace;
-    font-weight: 500;
-    display: none;
-    margin-left: 0rem;
+    font-family: "Overpass";
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin-left: -1rem;
     font-size: 17px;
     color: white;
   }
 
 .link-text {
-    font-family:monospace;
-    font-weight: 500;
-    display: none;
-    margin-left: 0rem;
+    font-family: "Overpass";
+    font-weight: 100;
+    letter-spacing: 1px; 
+    margin-left: -1rem;
     font-size: 17px;
     color: white;
   }
 
-
-
 .nav-link svg{
     width: 30px;
     height: auto;
-    margin: 0 2rem;
+    margin: 0 3rem;
     color: #ef8800;
     flex-shrink: 0;
   }
 
-  .sidebar:hover {
-    width: 12rem;
-}
-
-.sidebar:hover .link-text{
-    display: block;
-}
-.sidebar:hover .link-text1{
-    display: block;
-}
 .nav-item:first-child{
     margin-top: 3rem;
+    
 }
-
 .nav-item{
     width: 100%;
-    margin-top: 5rem;
+    margin-top: 2rem;
+}
+.top-nav {
+  border-bottom: solid 1px #323232;
+  border-radius: 20px;
+  height: 648px;
+}
+.bottom-nav {
+  height: 40vh;
+  border: solid 1px #323232;
+  border-radius: 20px;
+}
+
+.bottom-nav p{
+  position: relative;
+  top: 175px;
+  filter: grayscale(100%) opacity(0.7);
+  
 }

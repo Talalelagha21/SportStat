@@ -1,0 +1,10 @@
+.news h2{
+    color: #ef8800;
+    font-family: "Overpass";
+    font-weight: 100;
+    letter-spacing: 0.063em;
+    font-size: 1.375em;
+    position: relative;
+    top: 0.5em;
+    left: 1em;   
+}

@@ -1,0 +1,19 @@
+.standings-container{
+        background-color: #202020;
+        border-radius: 10px;
+        position:relative;
+        left: 17rem; top:125px;
+        width: calc(100% - 20rem);
+        height: 80vh;
+        z-index: -1;
+}
+
+.standings-title{
+    color: #ef8800;
+    font-family: "overpass";
+    letter-spacing: 1px;
+    position: absolute;
+    left: 3vh;
+    top: 1vh;
+    
+}

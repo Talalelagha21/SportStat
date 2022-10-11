@@ -1,0 +1,41 @@
+
+
+.alltimestats-header{
+    height: 60px;
+    
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.alltimestats-header h2{
+    color: #ef8800;
+    font-family: "Overpass";
+    font-weight: 100;
+    letter-spacing: 0.063em;
+    font-size: 1.375em;
+    position: relative;
+    top: 0.5em;
+    left: 1em;   
+}
+
+table{
+    color:#D8D8D8;
+    
+}
+.alltimeStats-table {
+   overflow: auto;
+}
+.alltimeStats-table th,
+.alltimeStats-table td {
+    text-align: center;
+	vertical-align: middle;
+    
+    border-bottom: solid .5px rgba(255,255,255,.5);;
+}
+
+.alltimeStats-table th {
+    width: 5%;
+}
+.alltimeStats-table td {
+    
+}

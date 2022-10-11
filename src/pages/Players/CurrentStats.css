@@ -1,0 +1,57 @@
+
+.current-stats-header h2{
+    color: #ef8800;
+    font-family: "Overpass";
+    font-weight: 100;
+    letter-spacing: 0.063em;
+    font-size: 1.375em;
+    position: relative;
+    top: 0.5em;
+    left: 1em;   
+}
+    
+
+.points,
+.rebounds,
+.assists,
+.fg,
+.ft {
+    color: #D8D8D8;
+    text-align: center;
+    font-family: "Overpass";
+    font-weight: 100;
+    letter-spacing: 0.063em;
+    font-size: 18px;
+    bottom: -0.313em;
+}
+
+.stat {
+    position: relative;
+    bottom: 0.200em;
+    font-size: 2.500em;
+    font-weight: 500;
+    color: #f5b159;
+}
+.ranking{
+    position: relative;
+    bottom: 0.813em;
+}
+.points {
+    grid-area: content1;
+    border-right: solid 2px#323232; 
+}
+.rebounds {
+    grid-area: content2;
+    border-right: solid 2px#323232; 
+}
+.assists {
+    grid-area: content3;
+    border-right: solid 2px#323232; 
+}
+.fg {
+    grid-area: content4;
+    border-right: solid 2px#323232; 
+}
+.ft {
+    grid-area: content5;
+}

@@ -1,0 +1,73 @@
+.player-info{  
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 1.563em;
+    margin-top: 0.625em;
+    
+ }
+
+.image-container{
+    position: relative;
+
+}
+.image-container img {
+    top: -0.125em;
+    left: 1.875em;
+}
+.player-info h2{
+    color: #ef8800;
+
+    font-size: 1.875em;
+}
+.player-info p{
+     color: #D8D8D8;
+    
+    font-size: 0.938em;
+    margin-top: 0.438em;  
+}
+
+.info {
+    position: relative;
+    left: 11em;
+    top: 0.188em;
+}
+.sub-info{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+
+.info2 {
+   position: relative;
+   left: 70em;
+   bottom: 7.8em;
+  
+}
+
+.playerBio{
+    display: table;
+    flex-direction: column;
+}
+
+.sec{
+    padding-left: 1.875em;
+    padding-top: 0.438em;
+}
+.sec2{
+    padding-top: 0.438em;
+}
+
+ 
+
+
+@media all and (max-width:500px) {
+    .player-info h2{
+        color: #342100;
+        
+        font-size: 30px;
+    }
+}

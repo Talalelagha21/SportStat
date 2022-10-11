@@ -1,0 +1,54 @@
+.home-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100% 100%;
+        grid-template-areas: "content1" "content2";
+        position:relative;
+        left: 17rem; top:125px;
+        width: calc(100% - 20rem);
+        height: 80vh;
+        z-index: -1;
+   
+}
+
+.text h2{
+    color: #D8D8D8;
+    position: relative;
+    font-family: "Overpass";
+    font-size:70px;
+    font-weight: 700;
+    letter-spacing: .2vh;
+    left: 2vh;
+    top:-15vh;
+
+}
+
+.text p{
+    color: #D8D8D8;
+    position: relative;
+    font-family: "Overpass";
+    font-size:20px;
+    letter-spacing: .2vh;
+    left: 3vh;
+    top:-15vh;
+}
+
+.image-container1 {
+    position: absolute;
+    top:350px;
+    left: 100vh;
+    z-index: 1;
+}
+
+.image-container2 {
+    position: absolute;
+    top:350px;
+    left:130vh;
+}
+
+.image-container3 {
+    position: absolute;
+    top: 125px;
+    left: 115vh;
+   
+}

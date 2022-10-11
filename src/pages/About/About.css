@@ -1,0 +1,36 @@
+.about-container {
+    background-color: #ef8800;
+    border-radius: 10px;
+    position:relative;
+    left: 17rem; top:125px;
+    width: calc(100% - 20rem);
+    height: 80vh;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.top-about{
+    border-bottom-left-radius: 10px;
+   
+}
+
+.title{
+    color: #141414;
+    font-family: "overpass";
+    font-size: 30px;
+    position: absolute;
+    letter-spacing: 3px;
+    left: 15vh;
+    top: 18vh;
+}
+
+.text{
+    color: #D8D8D8;
+    font-family: "overpass";
+    letter-spacing: 1px;
+    font-size: 20px;
+    position: absolute;
+    left:15vh;
+    top:29vh;
+}

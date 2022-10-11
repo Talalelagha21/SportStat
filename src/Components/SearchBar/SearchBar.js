@@ -1,13 +1,9 @@
 import searchLogo from './searchLogo.svg'
-import close from './close.svg'
-
-import React from "react";
 import './SearchBar.css'
+import React from 'react';
 
 
-
-class SearchBar extends React.Component {
-  render() {
+function SearchBar() {
     return (
       <div class="search-box">
         <button class="btn-search">
@@ -18,6 +14,6 @@ class SearchBar extends React.Component {
       
     )
   }
-}
+
 
 export default SearchBar;
